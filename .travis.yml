@@ -2,7 +2,8 @@ sudo: true
 
 services:
   - docker
-
+  
+  
 script:
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
   - docker build --pull -t "$CI_REGISTRY_IMAGE:$TRAVIS_COMMIT" .
