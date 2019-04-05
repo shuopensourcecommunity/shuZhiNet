@@ -9,4 +9,4 @@ RUN go get && go build -o shuZhiNet .
 FROM alpine
 COPY --from=builder /go/src/shuZhiNet/shuZhiNet .
 CMD ["./shuZhiNet"]
-EXPOSE 8086
+EXPOSE 8000
